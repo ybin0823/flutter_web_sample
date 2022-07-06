@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 class HeaderWidget extends StatelessWidget {
@@ -44,8 +45,8 @@ class HeaderWidget extends StatelessWidget {
                   SizedBox(
                     height: 4,
                   ),
-                  Text.rich(
-                    TextSpan(
+                  RichText(
+                    text: TextSpan(
                       text: 'iOS 개발자로 시작하였지만 19년도부터 시작한 ',
                       children: [
                         TextSpan(
@@ -54,6 +55,10 @@ class HeaderWidget extends StatelessWidget {
                             fontWeight: FontWeight.bold,
                             color: Colors.blue,
                           ),
+                          recognizer: TapGestureRecognizer()..onTapUp = (details) {
+                            // TODO: url_launcher plguin
+                            print('flutter');
+                          },
                         ),
                         TextSpan(text: '로 CrossPlatform의 매력을 느껴 4년째 Flutter로 개발을 하고 있습니다.'),
                       ],
