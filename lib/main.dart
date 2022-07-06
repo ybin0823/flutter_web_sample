@@ -38,46 +38,46 @@ class _MyHomePageState extends State<MyHomePage> {
       body: ListView(
         children: [
           HeaderWidget(),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Padding(
-                padding: const EdgeInsets.only(
-                  left: 20.0,
-                  bottom: 10,
-                ),
-                child: Text(
-                  'Gallery',
-                  style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-              Container(
-                height: 200,
-                padding: const EdgeInsets.only(
-                  left: 20.0,
-                  right: 20.0,
-                ),
-                child: ListView.separated(
-                  scrollDirection: Axis.horizontal,
-                  itemCount: 50,
-                  itemBuilder: (context, index) {
-                    return TileWidget(
-                      title: index.toString(),
-                      description: 'Sample',
-                    );
-                  },
-                  separatorBuilder: (context, index) {
-                    return SizedBox(
-                      width: 20,
-                    );
-                  },
-                ),
-              ),
-            ],
-          ),
+          // Column(
+          //   crossAxisAlignment: CrossAxisAlignment.start,
+          //   children: [
+          //     Padding(
+          //       padding: const EdgeInsets.only(
+          //         left: 20.0,
+          //         bottom: 10,
+          //       ),
+          //       child: Text(
+          //         'Gallery',
+          //         style: TextStyle(
+          //           fontSize: 24,
+          //           fontWeight: FontWeight.bold,
+          //         ),
+          //       ),
+          //     ),
+          //     Container(
+          //       height: 200,
+          //       padding: const EdgeInsets.only(
+          //         left: 20.0,
+          //         right: 20.0,
+          //       ),
+          //       child: ListView.separated(
+          //         scrollDirection: Axis.horizontal,
+          //         itemCount: 50,
+          //         itemBuilder: (context, index) {
+          //           return TileWidget(
+          //             title: index.toString(),
+          //             description: 'Sample',
+          //           );
+          //         },
+          //         separatorBuilder: (context, index) {
+          //           return SizedBox(
+          //             width: 20,
+          //           );
+          //         },
+          //       ),
+          //     ),
+          //   ],
+          // ),
         ],
       ),
     );
