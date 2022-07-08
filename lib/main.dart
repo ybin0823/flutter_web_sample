@@ -37,6 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: ListView(
         children: [
+          // Image.asset('images/profile.jpeg'),
           HeaderWidget(),
           // Column(
           //   crossAxisAlignment: CrossAxisAlignment.start,

@@ -48,6 +48,7 @@ class HeaderWidget extends StatelessWidget {
                   RichText(
                     text: TextSpan(
                       text: 'iOS 개발자로 시작하였지만 19년도부터 시작한 ',
+                      style: DefaultTextStyle.of(context).style,
                       children: [
                         TextSpan(
                           text: 'Flutter',
